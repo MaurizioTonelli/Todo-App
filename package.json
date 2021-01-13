@@ -1,0 +1,23 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "To-Do organizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaurizioTonelli/Todo-App.git"
+  },
+  "author": "Maurizio Tonelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaurizioTonelli/Todo-App/issues"
+  },
+  "homepage": "https://github.com/MaurizioTonelli/Todo-App#readme",
+  "devDependencies": {
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  }
+}

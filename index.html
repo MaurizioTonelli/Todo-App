@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <h1 class="logo">Todo-App</h1>
+    </nav>
+    <div class="todo-content">
+        <div class="card add-project">
+            <h2>Add new project</h2>
+            <button id="add-project" class="circle-button">+</button>
+        </div>
+        <div class="add-project-form" id="add-project-form">
+            <form action="" autocomplete="off">
+                <label for="name">Project name:</label>
+                <input type="text" id="name" name="name" placeholder="...name" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div class="card projects-container" id="projects-container">
+
+        </div>
+    </div>
+    <div class="add-todo-form">
+        <button class="close-form" id="close-todo-form">X</button>
+        <h2 id="project-name">Juliano</h2>
+        <form action="" id="add-todo-form" autocomplete="off">
+            <label for="task">Task</label>
+            <input type="text" name="task" id="task" required>
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="very-high">Very high</option>
+            </select>
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+            <input type="submit" value="Add Todo">
+        </form>
+    </div>
+    <div class="todo-description">
+        <button  id="close-description">X</button>
+        <h1><i class="fa fa-question-circle"></i></h1>
+        <p id="todo-description"></p>
+    </div>
+    <footer>
+        <h2>Made by Maurizio Tonelli, 2021</h2>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yusei+Magic&display=swap');
+
+*{
+    margin: 0px;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(190, 93, 13);
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+}
+.nav-bar h1{
+    padding:10px;
+    font-size: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    
+}
+.add-project{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color:rgb(133, 13, 13);
+    padding: 10px;
+    border-bottom: 4px solid rgb(207, 151, 67);
+}
+.add-project h2{
+    margin-top: 10px;
+}
+.circle-button{
+    margin:10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color:  rgb(190, 93, 13);
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+}
+.circle-button:hover{
+    background-color: rgb(207, 151, 67);
+    cursor:pointer;
+}
+.add-project-form{
+    display: none;
+}
+.add-project-form form{
+    background-color: rgb(45, 45, 212);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+    position:absolute;
+    left: calc(50% - 90px);
+    display:flex;
+    flex-direction: column;
+}
+.add-project-form label{
+    margin: 3px;
+}
+.add-project-form button{
+    color: whitesmoke;
+    margin-top: 5px;
+    border:none;
+    background-color: rgb(78, 103, 173);
+    padding: 5px;
+}
+.add-project-form input[type=text]{
+    text-align: center;
+}
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-container{
+    margin: 20px 0px;
+    overflow: auto;
+}
+.project-title{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(87, 87, 236);
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.project-title i:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.project-title button{
+    background-color: rgb(59, 80, 124);
+    border: none;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.project-title button:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+.project-content{
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 8px;
+    width: 90%;
+    margin:5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.hidden{
+    display: none;
+}
+.project-options{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.project-options button{
+    height: 80%;
+    border:none;
+    background-color: transparent;
+    width: 50%;
+    font-size: 6vw;
+    padding: 0px;
+}
+.project-options button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+#delete-project{
+    color:rgb(168, 58, 39);
+    margin-bottom: 1vw;
+}
+.todos{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.todo-title{
+    color: rgb(253, 253, 253);
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.todo-title h1{
+    flex-grow: 4;
+    text-align: center;
+}
+.low{
+    background-color: rgb(89, 163, 14);
+}
+.medium{
+    background-color: rgb(155, 156, 60);
+}
+.high{
+    background-color: rgb(187, 119, 42);
+}
+.very-high{
+    background-color: rgb(165, 50, 29);
+}
+.finished{
+    background-color: grey;
+    text-decoration: line-through;
+}
+
+.todo-title select{
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    background-color: inherit;
+}
+.todo-buttons button{
+    font-size: 16px;
+    color: white;
+    border: none;
+    height: 20px;
+    width: 20px;
+    padding: 0px;
+    background-color: inherit;
+}
+.todo-buttons button:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.add-todo-form{
+    background-color: rgb(231, 231, 231);
+    border-radius: 8px;
+    width: 50%;
+    height: 32%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#add-todo-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+#project-name{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.close-form{
+    float: right;
+    background-color: tomato;
+    border:none;
+    padding: 3px;
+    width: 30px;
+}
+.close-form:hover{
+    background-color: rgb(209, 94, 73);
+    cursor: pointer;
+}
+#add-todo-form label{
+    margin-top: 5px;
+}
+#add-todo-form input[type=text], #add-todo-form select{
+    border: none;
+    padding: 2px;
+}
+#add-todo-form input[type=submit]{
+    margin-top: 20px;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+#add-todo-form #description{
+    height: 50px;
+}
+#add-todo-form input[type=submit]:hover{
+    background-color: rgb(129, 129, 129);
+    cursor: pointer;
+}
+.todo-description{
+    border: 1px solid rgb(172, 171, 171);
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    padding: 20px;
+    color: blue;
+    border-radius: 8px;
+    background-color: rgb(212, 212, 212);
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+.todo-description button{
+    float: right;
+    border: none;
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+.todo-description button:hover{
+    background-color: rgb(177, 61, 40);
+    cursor: pointer;
+}
+#todo-description{
+    margin: 20px;
+    float: left;
+    color: black;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+}
